@@ -1,0 +1,148 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --cyan:hsl(179, 62%, 43%);
+  --bright-yellow:hsl(71, 73%, 54%);
+  --Light-Gray:hsl(204, 43%, 93%);
+  --Grayish-Blue:hsl(218, 22%, 67%);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  background-color: #eee;
+}
+.container {
+  min-height: calc(100vh - 37px);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.container .cards {
+  display: grid;
+  grid-template-areas: 
+  "comm comm "  
+  "sub why " ; 
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0 , 0.15);
+  margin: 0 30px;
+  max-width: 680px;
+}
+@media (max-width:300px) {
+  .container .cards {
+    text-align: center;
+  }
+}
+@media (max-width:767px) {
+  .container .cards {
+    grid-template-areas: 
+    "comm"  
+    "sub"
+    "why" ;
+    margin-top: 30px;
+  }
+}
+/* 
+  just in case that you want to set all phone 
+  screens as centered text
+           ||
+           \/
+@media (max-width:500px) {
+  .container .cards {
+    text-align: center;
+  }
+} */
+.container .cards .card {
+  padding: 30px 50px ;
+  min-width: fit-content;
+}
+@media (max-width:300px) {
+  .container .cards .card {
+    padding: 10px 20px ;
+  }
+}
+.container .cards .comm {
+  grid-area: comm ;
+  background-color: white;
+}
+.container .cards .comm h2 {
+  color: var(--cyan);
+}
+.container .cards .comm h3 {
+  color: var(--bright-yellow);
+  margin-bottom: 0;
+  font-size: 18px;
+}
+.container .cards .comm p {
+  margin: 13px 0 20px ;
+  line-height: 1.7;
+  color: var(--Grayish-Blue);
+}
+.container .cards .sub {
+  grid-area: sub;
+  background-color: var(--cyan);
+  color: white;
+}
+.container .cards .sub h2 {
+  font-size: 21px;
+  color: #f5ffff;
+}
+.container .cards .sub h3 {
+  color: #81d8e1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-weight: lighter;
+  align-items: center;
+  margin-bottom: 0;
+}
+@media (max-width:348px) {
+  .container .cards .sub h3 {
+  justify-content: center;
+  }
+}
+.container .cards .sub h3 span {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+.container .cards .sub p {
+  color: var(--Light-Gray);
+  color: #f5ffff;
+  margin: 5px 0 30px;
+}
+.container .cards .sub a {
+  text-decoration: none;
+  background-color: var(--bright-yellow);
+  padding: 15px 0 ;
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+}
+.container .cards .why {
+  grid-area: why ;
+  background-color: #2ab2afcc;
+  color: white;
+}
+.container .cards .why h2 {
+  font-size: 21px;
+  color: #f5ffff;
+}
+.container .cards .why p {
+  color: var(--Light-Gray);
+  line-height: 1.7;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
