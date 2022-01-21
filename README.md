@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/hossam4444/single-price-grid-component)
-- Live Site URL: [Add live site URL here](https://hossam4444.github.io/single-price-grid-component/)
+- Solution URL: [Frontend Mentor solution URL](https://github.com/hossam4444/single-price-grid-component)
+- Live Site URL: [live site URL](https://hossam4444.github.io/single-price-grid-component/)
 
 
 ## My process
