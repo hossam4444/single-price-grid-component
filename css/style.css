@@ -16,12 +16,15 @@ body {
   font-size: 16px;
   font-family: 'Karla', sans-serif;
   background-color: #eee;
-}
-.container {
-  min-height: calc(100vh - 37px);
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+.container {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 .container .cards {
   display: grid;
@@ -31,7 +34,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0 , 0.15);
-  margin: 0 30px;
+  margin: 30px 30px 0;
   max-width: 680px;
 }
 @media (max-width:300px) {
@@ -45,7 +48,6 @@ body {
     "comm"  
     "sub"
     "why" ;
-    margin-top: 30px;
   }
 }
 /* 
